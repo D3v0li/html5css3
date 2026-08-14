@@ -1,8 +1,33 @@
-/* 
-Folha de estilo do site @Author Darjan
-*/
+/*  Folha de estilo do site @Author Darjan */
 
-body {
-    background-color: #727272;
+/* Smartphone retrato */
+
+/* Smartphone paisagem */
+@media (min-width: 576px) {
+    body {
+    background-color: #484383;
+    }
 }
+
+/* tablet retrato */
+@media (min-width: 768px) {
+    body {
+    background-color: #c96464;
+    }
+}
+
+/* tablet paisagem */
+@media (min-width: 992px) {
+    body {
+    background-color: #b4be51;
+    }
+}
+
+/* pc */
+@media (min-width: 1200px) {
+    body {
+    background-color: #727272;
+    }
+}
+
 
