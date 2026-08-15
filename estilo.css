@@ -1,4 +1,26 @@
 /*  Folha de estilo do site @Author Darjan */
+/* IMPORT GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS RESET */
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1em;
+}
+
+/*  LAYOUT */
+.container {
+    margin: 0 auto;
+    background-color: #7f007f;
+}
 
 /* Smartphone retrato */
 
@@ -7,12 +29,20 @@
     body {
     background-color: #484383;
     }
+    /*LAYOUT*/
+    .container{
+     max-width: 540px;
+    }
 }
 
 /* tablet retrato */
 @media (min-width: 768px) {
     body {
     background-color: #c96464;
+    }
+    /*LAYOUT*/
+    .container{
+     max-width: 720px;
     }
 }
 
@@ -21,12 +51,20 @@
     body {
     background-color: #b4be51;
     }
+    /*LAYOUT*/
+    .container{
+     max-width: 960px;
+    }
 }
 
 /* pc */
 @media (min-width: 1200px) {
     body {
     background-color: #727272;
+    }
+    /*LAYOUT*/
+    .container{
+     max-width: 1140px;
     }
 }
 
