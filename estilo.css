@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* CSS RESET */
-*{
+* {
     margin: 0;
     border: 0;
     padding: 0;
@@ -19,53 +19,134 @@ body {
 /*  LAYOUT */
 .container {
     margin: 0 auto;
-    background-color: #7f007f;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*TOPO DO SITE */
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
 
 /* Smartphone retrato */
 
+/*CABEÇALHO */ 
+header {
+    height: 60px;
+}
+
+#logo img {
+    width: 160px;
+    height: 100px;
+}
+
+#check {
+    display: none;
+}   
+
+label {
+    font-size: 3em;
+    padding-right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #343538;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+#check:checked ~ ul {
+    right: 0;
+}   
+
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
 /* Smartphone paisagem */
 @media (min-width: 576px) {
-    body {
-    background-color: #484383;
-    }
     /*LAYOUT*/
-    .container{
+    .container {
      max-width: 540px;
     }
 }
 
 /* tablet retrato */
 @media (min-width: 768px) {
-    body {
-    background-color: #c96464;
-    }
     /*LAYOUT*/
-    .container{
+    .container {
      max-width: 720px;
     }
 }
 
 /* tablet paisagem */
 @media (min-width: 992px) {
-    body {
-    background-color: #b4be51;
-    }
     /*LAYOUT*/
-    .container{
+    .container {
      max-width: 960px;
     }
 }
 
 /* pc */
 @media (min-width: 1200px) {
-    body {
-    background-color: #727272;
-    }
     /*LAYOUT*/
-    .container{
+    .container {
      max-width: 1140px;
     }
+
+
+/*CABEÇALHO */
+header {
+    height: 120px;
 }
 
+#logo img {
+    width: 160px;
+    height: 100px;
+    margin-top: 30px;
+}
 
+label {
+    display: none;
+}
+    
+nav ul {
+    position: static;
+    height: auto;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+nav ul li {
+    float: left;
+    border: 0;
+}
+
+nav ul li a {
+    color: #343538;
+}
+
+nav ul li a:hover {
+    color: #530707;
+}
+
+}
