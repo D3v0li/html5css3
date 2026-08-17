@@ -26,6 +26,17 @@ body {
     justify-content: space-between;
 }
 
+.Botao {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #c00000;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+}
+
 /*TOPO DO SITE */
 #topo {
     position: fixed;
@@ -41,8 +52,8 @@ header {
 }
 
 #logo img {
-    width: 160px;
-    height: 100px;
+    width: 200px;
+    height: 80px;
 }
 
 #check {
@@ -80,6 +91,26 @@ nav ul li a {
     color: #fff;
 }
 
+/*DESTAQUE */
+main {
+    height: 75vh;
+    background: url(img/image.png);
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5em;
+}
+
+main h2 {
+    font-size: 1em;
+    margin: 20px 0px 50px 0px;
+}
 
 
 /* Smartphone paisagem */
@@ -90,6 +121,11 @@ nav ul li a {
     }
 }
 
+/*DESTAQUE */
+main h1, main h2 {
+    text-shadow: #000 0.05em 0.05em 0.05em ;
+}
+
 /* tablet retrato */
 @media (min-width: 768px) {
     /*LAYOUT*/
@@ -98,6 +134,19 @@ nav ul li a {
     }
 }
 
+/* DESTAQUE */
+    main {
+        height: 45vh;
+    }
+
+    main h1 {
+        font-size: 2.0em;
+    }
+
+    main h2 {
+        font-size: 0.8em;
+    }
+
 /* tablet paisagem */
 @media (min-width: 992px) {
     /*LAYOUT*/
@@ -105,6 +154,12 @@ nav ul li a {
      max-width: 960px;
     }
 }
+
+/* DESTAQUE*/
+    main {
+        height: 70vh;
+    }
+
 
 /* pc */
 @media (min-width: 1200px) {
@@ -120,9 +175,9 @@ header {
 }
 
 #logo img {
-    width: 160px;
+    width: 300px;
     height: 100px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 label {
