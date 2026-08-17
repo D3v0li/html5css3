@@ -26,6 +26,11 @@ body {
     justify-content: space-between;
 }
 
+.flex2 {
+    display: flex;
+    align-items: center;
+}
+
 .Botao {
     text-decoration: none;
     color: #fff;
@@ -80,7 +85,6 @@ nav ul {
     right: 0;
 }   
 
-
 nav ul li {
     padding: 20px;
     border-bottom: 1px solid #a9a9a9;
@@ -96,6 +100,7 @@ main {
     height: 75vh;
     background: url(img/image.png);
     background-size: cover;
+    background-position: center;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -110,6 +115,34 @@ main h1 {
 main h2 {
     font-size: 1em;
     margin: 20px 0px 50px 0px;
+}
+
+/*SOBRE*/
+#sobre {
+    padding: 50px 0px;
+    background-size: cover;
+    background-position: center;
+}
+
+#destaquesobre {
+    display: none;
+}
+
+#textosobre {
+    color: #080808;
+    padding: 0px 10px;
+}
+
+#textosobre h2 {
+    margin-bottom: 10px;
+}
+
+.topicossobre {
+    margin-top: 20px;
+}
+
+.topicossobre img {
+    margin-right: 10px;
 }
 
 
@@ -202,6 +235,15 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #530707;
+}
+/*SOBRE */ 
+
+#destaquesobre {
+    display: inline;
+}
+#destaquesobre img {
+    border-radius: 50%;
+    margin-right: 50px;
 }
 
 }
